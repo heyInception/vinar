@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    <div class="header-bg">
+        <picture>
+            <source srcset="./img/header-bg.avif" type="image/avif">
+            <source srcset="./img/header-bg.webp" type="image/webp">
+            <img loading="lazy" src="./img/header-bg.png" class="header-bg-image" width="" height="" alt="">
+        </picture> @include('partials/header.html') @include('partials/header-main.html')
+    </div>
+    <main class="main">
+        @include('partials/cat-products-main.html') @include('partials/hit.html') @include('partials/brands-main.html') @include('partials/about-main.html') @include('partials/faq.html') @include('partials/call.html')
+
+    </main>
+
+    @include('partials/footer.html')
+</body>
+
+</html>

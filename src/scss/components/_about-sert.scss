@@ -1,0 +1,28 @@
+.about-sert {
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        margin: 55px 0;
+    }
+    &__column {
+        display: flex;
+        flex-flow: column;
+    }
+    &__title {
+        font-size: calc(40px + var(--zoom));
+        font-weight: 400;
+        color: var(--black);
+        line-height: 100%;
+        width: 100%;
+    }
+    &__items {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 22px;
+    }
+    &__item {}
+}

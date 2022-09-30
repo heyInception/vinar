@@ -1,0 +1,74 @@
+.brands-main {
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        margin: 55px 0;
+        position: relative;
+    }
+    &__title {
+        font-size: calc(44px + var(--zoom));
+        font-weight: 400;
+        line-height: 110%;
+        color: var(--black);
+    }
+    &__navigation {
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #0047B0;
+            font-weight: 700;
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: -54px;
+            right: auto;
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: -54px;
+            left: auto;
+        }
+    }
+    &__slider {
+        &_mobile {
+            display: none;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__card {
+        border: 2px solid #03AE33;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+        padding: 25px 35px;
+    }
+    &__img {
+        height: 145px;
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        a {
+            font-size: calc(20px + var(--zoom));
+            font-weight: 700;
+            line-height: 110%;
+            color: #0047B0;
+        }
+        .arrow-right {
+            position: relative;
+            margin-left: 10px;
+            &:after {
+                position: absolute;
+                content: url(../../img/arrow-right.svg);
+            }
+        }
+    }
+}

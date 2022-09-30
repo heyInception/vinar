@@ -1,0 +1,61 @@
+.call {
+    background: url(../../img/bg-call.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 16px;
+        padding: 88px 0;
+        margin: 55px 0 -55px;
+    }
+    &__title {
+        font-size: calc(40px + var(--zoom));
+        font-weight: 400;
+        color: var(--black);
+    }
+    &__subtitle {
+        font-size: calc(20px + var(--zoom));
+        font-weight: 400;
+        line-height: 124%;
+        color: var(--color-text);
+        width: 100%;
+    }
+    &__form {
+        width: 100%;
+    }
+    &__form-row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 23px;
+        input {
+            max-width: 424px;
+            width: 100%;
+            background: #FFFFFF;
+            border-radius: 6px;
+            height: 60px;
+            border: none;
+            outline: none;
+            padding: 0 16px;
+        }
+        input[type=submit] {
+            max-width: 280px;
+            width: 100%;
+            background: #03AE33;
+            font-size: calc(18px + var(--zoom));
+            font-weight: 700;
+            color: #fff;
+            transition: linear .5s;
+            &:hover {
+                background: #0C802D;
+                color: #FFFFFF;
+            }
+            &:focus {
+                background: #085E20;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.container {}

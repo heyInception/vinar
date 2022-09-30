@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+    @include('partials/header.html')
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__row">
+                    <ul class="breadcrumbs__list">
+                        <li><a href="">Главная</a></li>
+                        <li class="separator"></li>
+                        <li><a href="">Каталог</a></li>
+                        <li class="separator"></li>
+                        <li><a href="">Подгузники</a></li>
+                        <li class="separator"></li>
+                        <li><a href="">Прокладки Molped “Pure and soft” organic cotton</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        @include('partials/card-product.html')
+    </main>
+
+    @include('partials/footer.html')
+</body>
+
+</html>
