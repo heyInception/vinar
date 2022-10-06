@@ -1,0 +1,36 @@
+.adv {
+    &__row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: calc(40px + var(--zoom));
+        line-height: 110%;
+        color: #282828;
+    }
+    &__items {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 24px;
+        width: 100%;
+    }
+    &__item {
+        border: 2px solid #03AE33;
+        border-radius: 10px;
+        padding: 33px 30px;
+        max-width: 312px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+    }
+    &__img {}
+    &__txt {
+        font-size: calc(22px + var(--zoom));
+        font-weight: 400;
+        line-height: 100%;
+        color: #282828;
+    }
+}
