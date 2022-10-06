@@ -108,6 +108,7 @@ const swiper = new Swiper('.header-main__slider', {
 });
 const swiperHit = new Swiper('.hit__slider', {
     allowTouchMove: false,
+    autoHeight: true,
     effect: 'fade',
     autoHeight: true,
     fadeEffect: {
@@ -166,11 +167,11 @@ const swiperHit = new Swiper('.hit__slider', {
         },
     }
 });
-const swiperBrands = new Swiper('.brands-main__slider', {
+/*const swiperBrands = new Swiper('.brands-main__slider', {
     allowTouchMove: false,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.swiper-button-next-unique',
+        prevEl: '.swiper-button-prev-unique'
     },
     // Default parameters
     slidesPerView: 1,
@@ -196,8 +197,8 @@ const swiperBrands = new Swiper('.brands-main__slider', {
 });
 const swiperBrandsMobile = new Swiper('.brands-main__slider_mobile', {
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.swiper-button-next-unique',
+        prevEl: '.swiper-button-prev-unique'
     },
     // Default parameters
     slidesPerView: 1,
@@ -217,7 +218,7 @@ const swiperBrandsMobile = new Swiper('.brands-main__slider_mobile', {
             slidesPerView: 1,
         }
     }
-});
+});*/
 
 
 
@@ -225,8 +226,8 @@ document.querySelectorAll('.brands__slr_prd').forEach(n => {
     const brandsSlr = new Swiper(n.querySelector('.brands__slider'), {
         allowTouchMove: false,
         navigation: {
-            nextEl: n.querySelector('.swiper-button-next'),
-            prevEl: n.querySelector('.swiper-button-prev'),
+            nextEl: n.querySelector('.swiper-button-next-unique'),
+            prevEl: n.querySelector('.swiper-button-prev-unique'),
         },
         slidesPerView: 1,
         spaceBetween: 40,
@@ -237,6 +238,10 @@ document.querySelectorAll('.brands__slr_prd').forEach(n => {
             },
             768: {
                 slidesPerView: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next-unique',
+                    prevEl: '.swiper-button-prev-unique'
+                },
             },
             998: {
                 slidesPerView: 3,
@@ -248,6 +253,7 @@ document.querySelectorAll('.brands__slr_prd').forEach(n => {
             // when window width is >= 640px
             1300: {
                 slidesPerView: 4,
+
             }
         }
     });
